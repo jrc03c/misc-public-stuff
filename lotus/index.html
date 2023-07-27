@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <style>
+      :root {
+        --timing: cubic-bezier(0.75, 0, 0.25, 1);
+      }
+
+      /*
+      don't worry about the html and body styles; they're just for centering
+      the lotus in the page
+      */
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        width: 100vw;
+        height: 100vh;
+      }
+
+      body {
+        padding: 1.5em;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: flex-start;
+        align-items: flex-start;
+        position: absolute;
+      }
+
+      .lotus {
+        width: 547px;
+        position: absolute;
+      }
+
+      .petal,
+      .stem {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+
+      .petal-1 {
+        z-index: 7;
+        transform-origin: 33.46% 48.57%;
+        animation: 5s infinite var(--timing) petal-1-animation;
+      }
+
+      @keyframes petal-1-animation {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(-10deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+      .petal-2 {
+        z-index: 6;
+        transform-origin: 42.05% 49.94%;
+        animation: 5s infinite var(--timing) petal-2-animation;
+      }
+
+      @keyframes petal-2-animation {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(-5deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+      .petal-3 {
+        z-index: 5;
+        transform-origin: 49.36% 48.82%;
+        animation: 5s infinite var(--timing) petal-3-animation;
+      }
+
+      @keyframes petal-3-animation {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(-2deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+      .petal-4 {
+        z-index: 4;
+        transform-origin: 50.82% 52.30%;
+        animation: 5s infinite var(--timing) petal-4-animation;
+      }
+
+      @keyframes petal-4-animation {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(10deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+      .petal-5 {
+        z-index: 3;
+        transform-origin: 47.53% 51.93%;
+        animation: 5s infinite var(--timing) petal-5-animation;
+      }
+
+      @keyframes petal-5-animation {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(5deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+      .petal-6 {
+        z-index: 2;
+        transform-origin: 43.88% 52.30%;
+        animation: 5s infinite var(--timing) petal-6-animation;
+      }
+
+      @keyframes petal-6-animation {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(2deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+      .petal-7 {
+        z-index: 1;
+      }
+
+      .stem {
+        z-index: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="lotus">
+      <img src="lotus-petal-1.png" class="petal petal-1">
+      <img src="lotus-petal-2.png" class="petal petal-2">
+      <img src="lotus-petal-3.png" class="petal petal-3">
+      <img src="lotus-petal-4.png" class="petal petal-4">
+      <img src="lotus-petal-5.png" class="petal petal-5">
+      <img src="lotus-petal-6.png" class="petal petal-6">
+      <img src="lotus-petal-7.png" class="petal petal-7">
+      <img src="lotus-stem.png" class="stem">
+    </div>
+  </body>
+</html>
