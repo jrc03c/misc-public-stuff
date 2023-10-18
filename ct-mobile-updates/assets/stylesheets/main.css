@@ -1,0 +1,168 @@
+body {
+  padding-top: 24px !important;
+}
+
+a.clearerthinking_brand img {
+  height: 88px;
+}
+
+.sidebar {
+  width: auto;
+  height: auto;
+  padding: 1.5em;
+  position: fixed;
+  left: 0;
+  top: 20px;
+}
+
+.sidebar a.clearerthinking_brand {
+  height: 106px;
+}
+
+.addthis_button_facebook,
+.addthis_button_twitter,
+.addthis_button_google_plusone_share,
+.addthis_button_reddit,
+.addthis_button_stumbleupon,
+.addthis_button_hackernews,
+.addthis_button_compact {
+  display: none !important;
+}
+
+.bottom-bar a.clearerthinking_brand {
+  position: relative;
+  top: -24px;
+
+  width: 106px;
+}
+
+.program_container .main a:link {
+  color: #00ade9;
+}
+
+.program_container .main a:visited {
+  color: #018bbb;
+}
+
+@media (min-width: 768px) {
+  #ct-logo,
+  #navigation_share_button {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #program_navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  #program_navigation * {
+    z-index: 2;
+  }
+
+  #program_navigation #back-button,
+  #program_navigation #run-menu {
+    position: unset;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+  }
+
+  #program_navigation #back-button:empty,
+  #program_navigation #run-menu:empty {
+    display: none;
+  }
+
+  #navigation_spacer {
+    width: 1px;
+    flex-grow: 999999;
+  }
+
+  #navigation_share_button {
+    width: 48px;
+    height: 48px;
+    padding: 0.5em;
+    line-height: 1em;
+    margin: 0;
+    padding: 0.5em;
+    border: 0;
+    background-color: transparent;
+  }
+
+  #navigation_share_button:focus {
+    background-color: rgb(211, 211, 211);
+    z-index: 1001;
+  }
+
+  .points {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+    pointer-events: none !important;
+  }
+
+  .points .change.positive,
+  .points .change.negative {
+    height: 48px;
+  }
+
+  .points .change.positive:empty,
+  .points .change.negative:empty {
+    display: none !important;
+  }
+
+  #ct-logo {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    flex: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  #ct-logo:focus {
+    background-color: rgb(211, 211, 211);
+  }
+
+  #ct-logo img {
+    height: 1.5em;
+    min-height: 1.5em;
+    max-height: 1.5em;
+  }
+
+  .clearerthinking_brand.clearerthinking_brand_lg {
+    display: none;
+  }
+
+  .sharethis-sticky-share-buttons {
+    position: fixed !important;
+    bottom: -48px !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: bottom 0.1s ease-out !important;
+  }
+
+  .sharethis-sticky-share-buttons.are-visible {
+    bottom: 0px !important;
+    opacity: 1 !important;
+    pointer-events: all !important;
+  }
+
+  .navigation_container {
+    transition: bottom 0.1s ease-out !important;
+  }
+
+  .navigation_container.sharethis-buttons-are-visible {
+    bottom: 48px !important;
+    transition: bottom 0.1s ease-out !important;
+  }
+}

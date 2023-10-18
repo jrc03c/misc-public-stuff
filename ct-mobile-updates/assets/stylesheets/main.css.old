@@ -1,0 +1,36 @@
+body {
+	padding-top: 24px ! important;
+}
+
+a.clearerthinking_brand img {
+	height: 88px;
+}
+
+.sidebar {
+	left: 69px;
+	top: 24px;
+}
+
+.sidebar a.clearerthinking_brand {
+	height: 106px;
+}
+
+.sidebar a.clearerthinking_brand img {
+	position: relative;
+	left: -24px;
+}
+
+.bottom-bar a.clearerthinking_brand {
+	position: relative;
+	top: -24px;
+
+	width: 106px;
+}
+
+.program_container .main a:link {
+	color: #00ade9;
+}
+
+.program_container .main a:visited { 
+	color: #018bbb; 
+}
