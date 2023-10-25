@@ -44,6 +44,20 @@ a.clearerthinking_brand img {
   color: #018bbb;
 }
 
+.dropdown-menu {
+  left: 0 !important;
+  width: fit-content !important;
+  max-width: fit-content !important;
+}
+
+.dropdown-menu li {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  list-style-type: none !important;
+  list-style-position: unset !important;
+}
+
 @media (min-width: 768px) {
   #ct-logo,
   #navigation_share_button {
@@ -79,13 +93,18 @@ a.clearerthinking_brand img {
     display: none;
   }
 
+  #program_navigation #back-button:active,
+  #program_navigation #back-button:focus {
+    background-color: rgb(211, 211, 211);
+  }
+
   #navigation_spacer {
     width: 1px;
     flex-grow: 999999;
   }
 
   #navigation_share_button {
-    width: 48px;
+    width: auto;
     height: 48px;
     padding: 0.5em;
     line-height: 1em;
@@ -98,6 +117,12 @@ a.clearerthinking_brand img {
   #navigation_share_button:focus {
     background-color: rgb(211, 211, 211);
     z-index: 1001;
+  }
+
+  .dropdown-menu {
+    width: 100% !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
   }
 
   .points {
@@ -164,5 +189,11 @@ a.clearerthinking_brand img {
   .navigation_container.sharethis-buttons-are-visible {
     bottom: 48px !important;
     transition: bottom 0.1s ease-out !important;
+  }
+}
+
+@media (max-width: 384px) {
+  #navigation_share_button .share-button-label {
+    display: none;
   }
 }
